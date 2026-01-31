@@ -32,18 +32,33 @@ public class HelloWorld {
 		 * nguyên %f: số thực - mặc định là 6 số lẻ %.3f định dạng 3 số lẻ %.0f lam tron
 		 * so ; %s: chuỗi
 		 */
-		Scanner in = new Scanner(System.in);
-		int tax = in.nextInt();
-		if (tax < 10) {
-			System.out.println("Khong dong thue");
-		} else if (tax >= 10 && tax < 15) {
-			System.out.println("Thue 10%");
-		} else if (tax >= 15 && tax < 30) {
-			System.out.println("Thue 20%");
-		} else {
-			System.out.println("Thue 50%");
-		}
-		in.close();
+		/* System.exit(0); -> thoat han chuong trinh : <=> return 0; */
+		/* sysout("%.3f ", x ) -> dinh dang thap phan */
 
+//		Nếu nhập vào 1 => in ra "Bạn đã lựa chọn phép cộng" 
+//		Nếu nhập vào 2 => in ra "Bạn đã lựa chọn phép trừ" 
+//		Nếu nhập vào 3 => in ra "Bạn đã lựa chọn thoát chương trình" => System.exit(0);
+
+		System.out.println(">> LỰA CHỌN TÍNH NĂNG <<");
+		System.out.println("++ ------------------ ++");
+		System.out.println("| 1. Cộng             |");
+		System.out.println("| 2. Trừ               |");
+		System.out.println("| 3. Kết thúc        |");
+		System.out.println("++ ------------------ ++");
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Lựa chọn của bạn là : ");
+		int choice = scanner.nextInt();
+		switch (choice) {
+		case 1:
+			System.out.println("Bạn đã lựa chọn phép cộng");
+			break;
+		case 2:
+			System.out.println("Bạn đã lựa chọn phép trừ");
+			break;
+		default:
+			System.out.println("Bạn đã lựa chọn thoát chương trình");
+			System.exit(0);
+		}
+		scanner.close();
 	}
 }
