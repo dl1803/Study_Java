@@ -35,9 +35,6 @@ public class HelloWorld {
 		/* System.exit(0); -> thoat han chuong trinh : <=> return 0; */
 		/* sysout("%.3f ", x ) -> dinh dang thap phan */
 
-//		Nếu nhập vào 1 => in ra "Bạn đã lựa chọn phép cộng" 
-//		Nếu nhập vào 2 => in ra "Bạn đã lựa chọn phép trừ" 
-//		Nếu nhập vào 3 => in ra "Bạn đã lựa chọn thoát chương trình" => System.exit(0);
 		String[] clubs = { "MU", "Man", "Liverpool" };
 		System.out.println("run here with length = " + clubs.length);
 		System.out.println("run here " + Arrays.toString(clubs));
