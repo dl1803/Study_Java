@@ -1,7 +1,9 @@
-package Chapter6;
+package Chapter7;
 
 public class SinhVienIT extends SinhVien {
 	private String language;
+	private double scoreJava;
+	private double scoreHTML;
 
 	public void getMoney() {
 		System.out.println("run get money");
@@ -14,10 +16,12 @@ public class SinhVienIT extends SinhVien {
 		System.out.println("run infor from SinhVienIT");
 	}
 
-	public SinhVienIT(String id, String name, double price, double tax, String language) {
+	public SinhVienIT(String id, String name, double price, double tax, String language, double scJava, double scHTML) {
 		super(id, name, price, tax); // goi contructor cua cha : khi chua tao batki constructor nao thi no tu lay
 										// constructor mac dinh
 		this.language = language;
+		this.scoreJava = scJava;
+		this.scoreHTML = scHTML;
 	}
 
 	public String getLanguage() {
@@ -29,14 +33,14 @@ public class SinhVienIT extends SinhVien {
 	}
 
 	@Override
-	public String toString() {
-		return "SinhVienIT [language=" + language + "]";
+	double getDiem() {
+		// TODO Auto-generated method stub
+		return (this.scoreJava * 2 + this.scoreHTML) / 3;
 	}
 
 	@Override
-	void tinhDiem() {
-		// TODO Auto-generated method stub
-
+	public String toString() {
+		return "SinhVienIT [language=" + language + ", scoreJava=" + scoreJava + ", scoreHTML=" + scoreHTML + "]";
 	}
 
 }

@@ -9,4 +9,10 @@ public class SinhVienCoKhi extends SinhVien {
 		this.skill = skill;
 	}
 
+	@Override
+	void tinhDiem() {
+		// TODO Auto-generated method stub
+
+	}
+
 }

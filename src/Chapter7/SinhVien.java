@@ -1,4 +1,4 @@
-package Chapter6;
+package Chapter7;
 
 public abstract class SinhVien {
 	protected String id;
@@ -26,10 +26,5 @@ public abstract class SinhVien {
 		System.out.println("run infor from parent");
 	}
 
-	@Override
-	public String toString() {
-		return "SinhVien [id=" + id + ", name=" + name + ", price=" + price + ", tax=" + tax + "]";
-	}
-
-	abstract void tinhDiem();
+	abstract double getDiem();
 }
